@@ -1,0 +1,54 @@
+/* 中文编辑层：让简体中文成为视觉主体，英文只承担编号与身份辅助。 */
+:root{--cn-font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;--display-font:"Iowan Old Style","Baskerville","Times New Roman","Songti SC",serif}
+body{font-family:var(--cn-font),-apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.005em}
+.site-header nav a,.header-contact,.motion-toggle,.hero-intro,.hero-description,.hero-role,.hero-actions,.hero-meta,.hero-character-copy,.hero-character-tags,.hero-stage-label,.hero-stage-index,.hero-scroll-cue,.principle-strip,.section-heading,.internship-identity,.experience-item,.project-body,.belief,.about-copy,.resume-section,.contact-section,.site-footer{font-family:var(--cn-font),-apple-system,BlinkMacSystemFont,sans-serif}
+.site-header nav{font-size:13px;letter-spacing:.08em}
+.header-contact{font-size:13px;letter-spacing:.04em}
+.hero-opening{grid-template-columns:minmax(460px,.96fr) minmax(470px,1.04fr);gap:1vw;padding-inline:6vw}
+.hero-copy{max-width:760px;padding-top:18px}
+.hero-kicker{letter-spacing:.1em;font-size:11px}
+.hero-intro{font-size:17px;letter-spacing:.02em;margin-top:32px}
+.hero-intro span{color:#bcb5c8;margin-right:11px}
+.hero-intro strong{color:#f3eff7;font-weight:550}
+.hero-title{font-family:var(--display-font),sans-serif;font-size:clamp(65px,7.3vw,116px);line-height:1.13;letter-spacing:0;font-weight:650;max-width:840px}
+.hero-title-line{height:1.13em;overflow:visible;clip-path:inset(0 -4% 0 0);padding-bottom:.04em}
+.hero-title-line>span{transform:translateY(120%) scaleX(.94)}
+.hero-description{font-size:15px;line-height:2;margin-top:24px;letter-spacing:.02em}
+.hero-role{font-size:12px;letter-spacing:.03em;margin-top:15px}
+.hero-meta{font-size:10px;letter-spacing:.08em}
+.hero-character-stage{border-left:0;border-radius:38% 0 0 38%;background:radial-gradient(ellipse at 53% 47%,#9d6cf13a 0%,#4c2f8122 29%,transparent 68%);margin-block:6%;overflow:visible}
+.hero-character-stage::before{inset:4% -8% 3% 2%;border-color:#d1b4ff34}
+.hero-character{width:min(82%,800px);right:1%;bottom:-4%;filter:drop-shadow(0 35px 48px #0009)}
+.hero-character-glow{width:76%;right:8%;top:12%}
+.hero-character-copy{left:5%;bottom:15%;font-size:11px;letter-spacing:.12em}
+.hero-character-tags{right:3%;top:17%;gap:8px}
+.hero-character-tags span{font-size:10px;letter-spacing:.12em;padding:7px 13px;border-color:#d1b4ff55}
+.hero-stage-label{font-size:10px;letter-spacing:.1em}
+.hero-stage-index{right:4%;bottom:12%;position:absolute;z-index:3;display:flex;gap:8px;align-items:center;color:#9f93ad;font-size:10px;letter-spacing:.08em}
+.hero-stage-index b{color:var(--acid);font-size:17px;font-weight:500}
+.hero-scroll-cue{font-size:9px;letter-spacing:.13em}
+.principle-strip p{font-size:14px;letter-spacing:.05em}
+.hero-title,.section-heading h2,.about-heading h2,.resume-section h2,.contact-section h2{font-family:var(--display-font),serif;font-weight:500;letter-spacing:0}
+.section-heading h2,.about-heading h2,.resume-section h2,.contact-section h2{font-style:normal}
+.section-heading h2{font-size:clamp(38px,4.5vw,66px);line-height:1.18}
+.section-heading>p{font-size:14px;line-height:2}
+.scroll-section::before{font-family:var(--display-font),sans-serif;letter-spacing:0}
+.experience-title h4,.project-body h3,.belief h3,.internship-identity h3{font-family:var(--display-font),serif}
+.experience-title h4{font-size:19px}
+.experience-item p,.project-body>p,.belief>p,.about-copy>p,.contact-section>div>p:last-child{font-size:14px;line-height:2}
+.internship-identity h3{font-size:34px}
+.ability-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:26px 0 28px;border-top:1px solid #ffffff18}
+.ability-index span{display:flex;align-items:center;gap:12px;min-height:45px;border-bottom:1px solid #ffffff18;color:#b8aec5;font-size:12px;letter-spacing:.04em}
+.ability-index span:nth-child(odd){margin-right:16px}
+.ability-index b{color:var(--acid);font-size:10px;font-weight:500;letter-spacing:.1em}
+.studio-profile-copy strong{font-family:var(--display-font),sans-serif}
+.education strong{font-size:15px;letter-spacing:.04em}
+.education p{font-size:12px}
+.resume-section h2{font-size:40px;line-height:1.25}
+.resume-section>div>p:last-child{font-size:13px}
+.contact-section h2{font-size:52px;line-height:1.2}
+.contact-studio{font-size:12px!important}
+.site-footer{font-size:11px}
+@media(max-width:1100px){.hero-opening{grid-template-columns:minmax(390px,.95fr) minmax(390px,1.05fr)}.hero-title{font-size:clamp(58px,7.2vw,90px)}.hero-character{width:90%;right:-5%}.section-heading h2{font-size:45px}}
+@media(max-width:800px){.hero-opening{grid-template-columns:1fr;padding-inline:6vw;gap:20px}.hero-title{font-size:clamp(57px,11vw,88px)}.hero-character-stage{margin-inline:-6vw;margin-block:0;border-radius:0;min-height:540px}.hero-character{width:80%;right:7%}.hero-character-copy{left:11%}.hero-stage-index{right:8%}.section-heading h2{font-size:38px}.experience-item p,.project-body>p,.belief>p,.about-copy>p{font-size:13px}}
+@media(max-width:600px){.site-header nav{font-size:11px}.hero-opening{padding-inline:20px}.hero-intro{font-size:15px}.hero-title{font-size:clamp(49px,13vw,68px);line-height:1.16;letter-spacing:0}.hero-title-line{height:1.16em}.hero-description{font-size:13px}.hero-character-stage{margin-inline:-20px;min-height:390px}.hero-character{width:94%;right:0}.hero-character-tags span{font-size:7px;padding:5px 8px}.hero-character-copy{font-size:8px}.hero-stage-index{font-size:7px;right:6%}.hero-stage-index b{font-size:13px}.section-heading h2{font-size:31px}.section-heading>p{font-size:12px}.internship-identity h3{font-size:29px}.experience-item p,.project-body>p,.belief>p,.about-copy>p{font-size:13px}.ability-index{grid-template-columns:1fr}.ability-index span:nth-child(odd){margin-right:0}.ability-index span{min-height:42px}.resume-section h2{font-size:32px}.contact-section h2{font-size:37px}}
